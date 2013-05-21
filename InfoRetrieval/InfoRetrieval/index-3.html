@@ -1,153 +1,85 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title></title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-  <!--[if lt IE 7]>
-  	<link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="screen">
-  <![endif]-->
-  <!--[if lt IE 9]>
-  	<script type="text/javascript" src="js/html5.js"></script>
-  <![endif]-->
-</head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript" src="js/html5.js"></script>
+<script type="text/javascript">
+    function turnit(ss, ii) {
+        //Ñ­»·ÅĞ¶Ï£¬ssÎª×ÜÁĞ±íÊı,iiÎªµ±Ç°ÁĞ
+        for (i = 1; i <= ss; i++) {
+            //´íÎó¹ıÂË£¬µ±i=1ÖÁssÖĞÓĞÒ»ÏîÒÔÉÏ³ö´í£¬×Ô¶¯¹ıÂË
+            try {
+                //µ±i=iiÊ±Õ¹¿ªÄ¿Â¼Êı£¬·ñÔò¹Ø±Õ
+                if (i == ii) {
+                    //ÅĞ¶ÏiÁĞµÄÄ¿Â¼ÊıÊÇ·ñÕ¹¿ª£¬Ã»ÓĞ¾ÍÕ¹¿ª£¬·ñÔò¹Ø±Õ
+                    if (window.eval("content" + i).style.display == "none") {
+                        window.eval("content" + i).style.display = "";
+                        window.eval("img" + i).src = "http://www.blueidea.com/articleimg/2003/09/804/e.gif";
+                    } else {
+                        window.eval("content" + i).style.display = "none";
+                        window.eval("img" + i).src = "http://www.blueidea.com/articleimg/2003/09/804/c.gif";
+                    }
+                } else {
+                    window.eval("content" + i).style.display = "none";
+                    //window.eval("img" + i).src = "http://www.blueidea.com/articleimg/2003/09/804/c.gif";
+                }
+            } catch (e) { }
+        }
+    }
+</script>
 
-<body id="page4">
-  <!-- header -->
-  <header>
+</head>
+<body>
+<header>
+
     <div class="container_12">
     	<!-- .logo -->
     	<div class="logo">
-      	<h1><a href="index.html">ConsulteX</a></h1>
-        <span>customers support</span>
+      	<h1><a href="index-0.html">¼ìË÷ÏµÍ³</a></h1>
+        <span>¾Å½­Ñ§Ôº</span>
       </div>
     	<!-- /.logo -->
-       <a href="http://lib.jju.edu.cn/index.asp" target="_blank" class="rss">å›¾ä¹¦é¦†ä¸»é¡µ</a>
+      <a href="#" class="rss">Í¼Êé¹İÖ÷Ò³</a>
       <nav>
         <ul>
-        	<li><a href="index.html" >é¦–é¡µ</a></li>
-          <li><a href="index-1.html">è®¡ç®—æœºæ£€ç´¢çŸ¥è¯†</a></li>
+        	<li><a href="index.html" class="current">Ê×Ò³</a></li>
+          <li><a href="index-1.html">¼ÆËã»ú¼ìË÷ÖªÊ¶</a></li>
           <li><a href="index-2.html">Solutions</a></li>
-          <li><a href="index-3.html" class="current">ç•™è¨€æ¿</a></li>
-          <li><a href="index-4.html">ç–‘éš¾è§£ç­”</a></li>
-		  <li><a href="index-5.html">å¸®åŠ©</a></li>
+          <li><a href="index-3.html">ÁôÑÔ°å</a></li>
+          <li><a href="index-4.html">ÒÉÄÑ½â´ğ</a></li>
         </ul>
       </nav>
     </div>
   </header>
- <!--  <section id="main-banner">
-  	<div class="container_12">
-    	
-    	<div class="banner">
-      	<div class="indent">
-        	<em>our work is</em> dedicated<br />
-          to the prosperity of our <em>Clients!</em><br />
-          <a href="#" class="button">Read More</a>
-        </div>
-      </div>
-    
-    </div>
-  </section> -->
-  <section id="content">
-  	<section class="row-1">
-    	<div class="container_12">
-        <div class="clearfix">
-          <div class="grid_4">
-          	<!-- .box -->
-          	<div class="box">
-            	<h2 class="icon3">Partnership<span></span></h2>
-              <p><mark>Lorem ipsum dolor</mark> sit amet, consectetur adipi- scing elit. Cras elit leo, vestibulum nec dictum ut, adipiscing sit amet orci. Nam euismod pretium felis ut faucibus.</p> 
-              <p>Lorem ipsum dolor sit amet, consectetur adipi- scing elit. Praesent et libero ornare lacus tem gravida. <mark>Suspendisse vulputate</mark>, magna in varius congue, nisl neque aliquet augue, sit aliquet augue sit aliquet augue, sit amet convallis elit orci eget elit. Phasellus</p> 
-              <a href="#" class="button">Read More</a>
-            </div>
-          	<!-- /.box -->
-          </div>
-          <div class="grid_4">
-          	<!-- .box -->
-          	<div class="box">
-            	<h2 class="icon1">About Partnering<span></span></h2>
-              <p><img src="images/4page-img1.jpg" alt=""></p>
-              <p>Quisque diam lorem, interdum vitae, dapibus ac, scelerisque vitae, pede. Donec llus non erat lacinia fermentum. Donec in velit ve...</p>
-              <a href="#" class="button">Read More</a>
-            </div>
-          	<!-- /.box -->
-          </div>
-          <div class="grid_4">
-          	<!-- .box -->
-          	<div class="box">
-            	<h2 class="icon2">Our Partners<span></span></h2>
-              <ul class="list1">
-              	<li><a href="#">Integer malesuada placerat</a></li> 
-                <li><a href="#">tortor nec tincidunt. Sed molestie</a></li> 
-                <li><a href="#">ante et elit posuere laoreet.</a></li> 
-                <li><a href="#">Nunc venenatis gravida dictum.</a></li>
-                <li><a href="#">Maecenas felis enim, hendrerit</a></li> 
-                <li><a href="#">eget mattis vel, venenatis nec</a></li> 
-                <li><a href="#">libero. Cras elit magna, porta nec</a></li> 
-                <li><a href="#">porttitor a, fermentum a urna.</a></li> 
-                <li><a href="#">Mauris scelerisque luctus magna ut</a></li>
-                <li><a href="#">lobortis. Mauris condimentum</a></li>
-                <li><a href="#">ullamcorper neque, ullamcorper</a></li>
-              </ul>
-              <a href="#" class="button">Read More</a>
-            </div>
-          	<!-- /.box -->
-          </div>
-        </div>
-      </div>
-    </section>
-  	<!-- <section class="row-2">
-    	<div class="container_12">
-        <div class="clearfix">
-        	<div class="grid_5">
-          	<h3>Partnering For Profit</h3>
-            <h5>Curabitur mollis, ante non pharetra tristique, velit ipsum viverra dolor, non mollis neque lectus pulvinar ante. Fusce congue hendrerit purus, id rutrum metus luctus eu.</h5>
-            <ul class="list2">
-              <li><a href="#">Integer malesuada placerat tortor nec tincidunt. Sed molestie ante </a></li>
-              <li><a href="#">Etiam euismod, ipsum non sodales imperdiet, nulla nulla</a></li>
-              <li><a href="#">Phasellus sit amet tellus ac lectus convallis eleifend eu et diam.</a></li>
-              <li><a href="#">Curabitur porta augue vel orci tincidunt non malesuada magna</a></li>
-              <li><a href="#">Etiam euismod, ipsum non sodales imperdiet, nulla nulla</a></li>
-            </ul>
-            <a href="#" class="button">Read More</a>
-          </div>
-        	<div class="grid_7">
-          	<div class="indent">
-              <h3>Affiliate Programs</h3>
-              <div class="img-box">
-                <figure><img src="images/4page-img2.jpg" alt=""></figure>
-                <h4>Suspendisse vulputate, magna i varius congue, nisl neque aliquet eget elit. Phasellus dignissim</h4>
-                Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Proin ullamcorper urna et felis.ro...
-              </div>
-              <p>Donec eget tellus non erat lacinia fermentum. Donec in velit vel ipsum auctor pulvinar. Proin ullamcorper urna et felis. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. </p>
-              <a href="#" class="button">Read More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </section> -->
-  <!-- footer -->
-  <footer>
-    <div class="container_12">
-      <div class="indent">
-      	<nav>
-      	  <ul>
-          	<li><a href="index.html" >é¦–é¡µ</a>|</li>
-            <li><a href="index-1.html">è®¡ç®—æœºæ£€ç´¢çŸ¥è¯†</a>|</li>
-            <li><a href="index-2.html">solutions</a>|</li>
-            <li><a href="index-3.html" class="current">ç•™è¨€æ¿</a>|</li>
-            <li><a href="index-4.html">ç–‘éš¾è§£ç­”</a></li>
-			<li><a href="index-5.html">å¸®åŠ©</a></li>
-          </ul>
-      	</nav>
-          <!-- <div>
-
-        <div class="v">Consultex (c) 2010 | <a href="index-5.html">Privacy Policy</a> - Collect from <a href="http://www.cssmoban.com/" target="_blank" title="æ¨¡æ¿ä¹‹å®¶">æ¨¡æ¿ä¹‹å®¶</a></div></div>
-      </div> -->
-    </div>
-  </footer>
+<div id="menu">
+  <ul style="float:left;">
+    <li class="page_item page-item-2 current_page_item"><a href="###" onclick="turnit(2,1)" title="ÀíÂÛÖ¸µ¼">ÀíÂÛÖ¸µ¼</a>
+      <ul id = "content1">
+        <li><a href="" title="²Ù×÷¸ÅÊö">²Ù×÷¸ÅÊö</a></li>
+        <li><a href="" title="ÖØÒªÊı¾İ¿â½éÉÜ">ÖØÒªÊı¾İ¿â½éÉÜ</a></li>
+      </ul>
+    </li>
+    <li class="page_item page-item-5 current_page_item"><a href="###" onclick="turnit(2,2)" title="ÊµÀıÑİÊ¾">ÊµÀıÑİÊ¾</a>
+      <ul id = "content2" style="display:none">
+        <li><a href="" title="Çå»ªÍ¬·½CNKI">Çå»ªÍ¬·½CNKI</a></li>
+        <li><a href="" title="Î¬ÆÕÑ§ÊõÆÚ¿¯">Î¬ÆÕÑ§ÊõÆÚ¿¯</a></li>
+        <li><a href="" title="³¬ĞÇÊı×ÖÍ¼Êé">³¬ĞÇÊı×ÖÍ¼Êé</a></li>
+        <li><a href="" title="³¬ĞÇÊı×ÖÍ¼Êé">³¬ĞÇÊı×ÖÍ¼Êé</a></li>
+        <li><a href="" title="ÃÀ¹ú¡¶¹¤³ÌË÷Òı¡·">ÃÀ¹ú¡¶¹¤³ÌË÷Òı¡·</a></li>
+        <li><a href="" title="ÃÀ¹ú¡¶»¯Ñ§ÎÄÕª¡·">ÃÀ¹ú¡¶»¯Ñ§ÎÄÕª¡·</a></li>   
+      </ul>
+    </li>
+    <li class="page_item page-item-7 current_page_item"><a href="" title="¼ìË÷ÊµÏ°">¼ìË÷ÊµÏ°</a></li>
+    <li class="page_item page-item-9 current_page_item"><a href="" title="ÒÉÄÑ½â´ğ">ÒÉÄÑ½â´ğ</a></li>
+  </ul>
+  <div style="float:center;">
+    <iFrame src="" width="800px" height="490px"></iFrame>
+  </div>
+</div>
 </body>
 </html>

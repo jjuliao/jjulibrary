@@ -1,0 +1,171 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+ 
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font,
+
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i,
+ 
+center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+ 
+tbody, tfoot, thead, tr, th, td {  
+
+	margin: 0;                   
+
+	padding: 0;                
+
+	border: 0;                  
+
+	outline: 0;                
+
+	font-size: 100%;      
+
+	vertical-align: baseline;   
+
+	background: transparent;   
+
+}                     
+
+ol, ul {         
+
+	list-style: none;   
+
+}                            
+
+/* Main CSS Start */            
+
+body {    
+                                                                  
+	font-size: 12px;                                             
+
+	font-family: Arial, Helvetica, sans-serif;                 
+
+	color: #442f28;                                           
+
+	padding: 0px 0;
+                                                          
+}
+/* Main CSS End */
+                                    
+/* Menu CSS Start */
+                                   
+#menu {                         
+
+	background: url(../images/content-bg1.gif) repeat center top #3a2512; 
+                                   
+	padding: 0px 0px 0px 0px;
+                                      
+	position: inherit;
+  
+  bottom: 160px;                        
+
+}
+
+#menu ul {
+
+  width: 230px;  
+    
+  padding: 50px 0px 0px 150px;
+
+}
+                                      
+#menu ul li {                          
+
+	padding: 0px 0 7px;                   
+
+}                                   
+
+#menu ul li.parrent {              
+
+	padding: 0 0 0;                    
+
+}
+                                     
+#menu ul li a {
+                                   
+	height: 35px;
+                                   
+	width: 184px;
+                                 
+	display: block;
+                                 
+	background: url(../images/menu-bg.png) no-repeat bottom;    
+
+	text-decoration: none;                          
+
+	font-size: 18px;
+  
+  font-weight: bold;
+                                         
+	color: #0080FF;
+                                       
+	padding: 10px 0 0 15px;
+                                         
+	z-index: 2;
+                                      
+	position: relative;
+                                      
+}
+                               
+#menu ul li a:hover{
+                                            
+	background-position: top;
+                                                  
+	color: #F9F900;                                 
+
+}
+                                            
+#menu ul li.current_page_item ul, #menu ul li.current_page_parent ul {
+                                                            
+display: inherit;                                 
+
+}                                                    
+
+#menu ul li ul {
+                                                     
+	background: url(../images/child-menu-bg.gif) repeat-x top;
+                                                      
+	width: 170px;                                      
+
+	position: relative;
+                                                     
+	left: 16px;                                       
+
+	z-index: 1;                                       
+
+	top: -5px;                                       
+
+	padding: 2px 0 0;                                  
+                                                    
+	display:none;
+                                                    
+}                                  
+
+#menu ul li ul li a {                         
+
+	height: inherit;
+                                               
+	width: inherit;                             
+
+	display: block;                         
+
+	background: none;
+                                        
+	text-decoration: none;
+                                      
+	font-size: 14px;
+                                                                            
+	color: #0080FF !important;            
+
+	padding: 10px 10px 0px;                 
+
+}                                 
+
+#menu ul li ul li a:hover, #menu ul li ul li.current_page_item a {
+                                          
+	background: #664d45;
+                                         
+	color: #FFFF37 !important;
+                                         
+}
+                                         
+/* Menu CSS End */
